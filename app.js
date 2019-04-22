@@ -3,6 +3,7 @@ const app = express();
 const session = require('express-session')
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
+const PORT = process.env.PORT || 5400;
 
 app.use(bodyParser.urlencoded({
     extended: false
@@ -50,7 +51,7 @@ app.get('*', (req, res)=>{
     res.send('<h1>404</h1> This is wrong route. Please contact to the owner ')
 })
 
-app.listen(5400, ()=>{
+app.listen(PORT, ()=>{
     console.log('Server is running on port 5400');
     
 })
