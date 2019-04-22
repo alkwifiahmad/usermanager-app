@@ -1,0 +1,29 @@
+<h1>User Registration/Signup Form</h1>
+<form action="/signup" method="POST">
+  <div class="form-group">
+    <label for="exampleInputEmail1">User Name</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Your Name" name="name">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name="email">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="password">
+  </div>
+  <div class="form-group form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+  <div class="form-group">
+      <label for="inputState">Your Role</label>
+      <select id="inputState" class="form-control" name="role">
+        <option value="web dev">Web Developer</option>
+        <option value="lead dev">Team lead</option>
+        <option value="manager">Project Manager</option>
+      </select>
+    </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>

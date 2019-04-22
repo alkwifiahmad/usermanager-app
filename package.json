@@ -1,0 +1,19 @@
+{
+  "name": "usermanagement",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "dependencies": {
+    "body-parser": "*",
+    "express": "*",
+    "express-session": "^1.15.6",
+    "hbs": "^4.0.4",
+    "mongoose": "*",
+    "nodemon": "^1.18.11"
+  },
+  "author": "ahmad app",
+  "license": "ISC"
+}
